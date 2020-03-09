@@ -7,10 +7,11 @@ def edits1(word):
     replaces = [L + c + R[1:] for L, R in splits if R for c in letters]
     inserts = [L + c + R for L, R in splits for c in letters]
     print(splits)
-    print(deletes)
-    print(transposes)
-    print(replaces)
-    print(inserts)
+    # print(deletes)
+    # print(transposes)
+    # print(replaces)
+    # print(inserts)
     print(set(deletes + transposes + replaces + inserts))
+
 
 print(edits1('hello'))
