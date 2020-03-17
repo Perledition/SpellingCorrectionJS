@@ -3,7 +3,7 @@
 // Once there is a suggestion a list appears below the word with recommendations a user can choose from. Otherwise
 // the word will be corrected automatically.
 
-// TODO: WRITE THE CORRECTION ALGORITHM
+
 class SpellingCorrection {
 
     constructor(data_base){
@@ -123,6 +123,8 @@ class SpellingCorrection {
     double_edit_counts(){}
 
     correction(word){
+        this.singleModificationCollection = [];
+
         // create candidates with one modification step
         this.single_edit_counts(word);
         this._reduce_collection;
@@ -133,7 +135,7 @@ class SpellingCorrection {
         totalFreq = 0;
         for (t=0; t<this.singleModificationCollection.length; t++){
             if(this.data_base[this.singleModificationCollection[t]]){
-                totalFreq = totalFreq + this.data_base[this.singleModificationCollection[t]]
+                totalFreq = totalFreq + t;
             }
         }
 
@@ -166,9 +168,6 @@ class SpellingCorrection {
 }
 
 
-
-
-
  // LOAD DATA TO CLIENT
 async function data_load(word_base){
     const data = await fetch(word_base)
@@ -180,7 +179,6 @@ async function data_load(word_base){
 var sc = data_load("word_proba.json");
 
 
-// TODO: CREATE EVENT TRIGGER FOR ALL TEXT OR INPUT BOXES
 function liveSuggestion(){
     var input, result, txtValue, suggest, i;
     input = document.getElementById('input-box').value;
@@ -188,13 +186,30 @@ function liveSuggestion(){
 
 
     result.innerHTML = '';
-    console.log(input);
-    suggest = sc.correction(input);
+    if(input.length>2){
+        suggest = sc.correction(input);
 
-    for (i=0; i<suggest.length; i++){
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(suggest[i][0]));
-        result.appendChild(li);
+        for (i=0; i<suggest.length; i++){
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(suggest[i][0]));
+            result.appendChild(li);
+        }
     }
 }
+
+// add event listener for word in input box
+document.getElementById('input-box').addEventListener("keyup", liveSuggestion);
+
+// add event listener for select correction
+document.getElementById("result").addEventListener("click", function(e){
+    if(e.target.matches("li")){
+
+        // replace current misspelling with selection
+        document.getElementById("input-box").value = e.target.textContent;
+
+        // clean list
+        document.getElementById("result-list").innerHTML = '';
+    }
+})
+
 

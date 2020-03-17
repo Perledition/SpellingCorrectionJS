@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b6107b9-67a4-4cb6-aabc-fba232c6727f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/preview/spellingJsPreview.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spell_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/spell_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word_data/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_data/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spell_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/spell_model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_proba.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/word_proba.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +40,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Maxim\PycharmProjects\SpellingCorrectionJS\src" />
+      <recent name="C:\Users\Maxim\PycharmProjects\SpellingCorrectionJS\preview" />
+      <recent name="C:\Users\Maxim\PycharmProjects\SpellingCorrectionJS" />
       <recent name="$PROJECT_DIR$/word_data" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -123,6 +130,10 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="853" y="313" key="#data_prep/0.0.3440.1400@0.0.3440.1400" timestamp="1583426144717" />
+    <state x="847" y="456" key="FileChooserDialogImpl" timestamp="1583868267177">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="847" y="456" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1583868267177" />
     <state width="2088" height="398" key="GridCell.Tab.0.bottom" timestamp="1583691322562">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -152,9 +163,9 @@
     </state>
     <state x="477" y="320" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1583426168560" />
     <state x="477" y="335" key="SettingsEditor/0.23.3440.1363@0.23.3440.1363" timestamp="1583412738488" />
-    <state x="659" y="433" key="Vcs.Push.Dialog.v2" timestamp="1583523165447">
+    <state x="659" y="433" key="Vcs.Push.Dialog.v2" timestamp="1584474917499">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="659" y="433" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1583523165447" />
+    <state x="659" y="433" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1584474917499" />
   </component>
 </project>
